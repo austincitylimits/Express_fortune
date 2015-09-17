@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>Fortune</title>
+    <style>
+      body {
+        padding: 60px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+<script>
+function zodiac(day, month) {
+ // returns the zodiac sign according to day and month
+  var zodiac = ['', 'Capricorn', 'Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn'];
+  var last_day = ['', 19, 18, 20, 20, 21, 21, 22, 22, 21, 22, 21, 20, 19];
+  return (day > last_day[month]) ? zodiac[month*1 + 1] : zodiac[month];
+}
+// this gets the current day and month
+
+  var currentDate = new Date();
+    var day = currentDate.getDate();
+    var month = currentDate.getMonth() + 1;
+    
+// the day and month is passed to the z_sign variable to give a current horoscope sign.
+
+var z_sign = zodiac(day, month);     // example 14,10
+
+alert(z_sign);    // returns Libra
+</script>
+
+</body>
+</html>

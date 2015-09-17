@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>Fortune</title>
+    <style>
+      body {
+        padding: 60px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+<script>
+// this should return a list of horoscope signs
+function getDailyHoroscope(v_sign){
+
+    var today = new Date();
+    var month = today.getMonth()+1;
+    var day = today.getDate();
+    var year = today.getYear();
+    if (year < 2000)
+    year = year + 1900;
+
+    window.open("http://my.horoscope.com/horoscope/dailyhoroscope/dailyhoroscopebysign.aspx?day=" + day + "&month=" + month + "&year=" + year + "&sign=" + v_sign);
+}
+</script>
+
+<div align="center">
+  <center>
+  <table border="0" cellspacing="0" bgcolor="#3F3F3F">
+    <tr>
+      <td>
+        <div align="center">
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+<div align="center">
+      <TABLE border=0 cellpadding=4 width="100%" bgcolor="#FFFFFF" cellspacing="0">
+        <TBODY>
+       <TR>
+          <TD align=middle vAlign=center width=3 bordercolor="#FFFFFF"> </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(1);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Aries.gif" width="64" height="64" border="0"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><B><a href="javascript:getDailyHoroscope(1);">Aries</a></B></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>March 21 - April 19</I></FONT>
+	  </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(7);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Libra.gif" width="64" height="64"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><b><a href="javascript:getDailyHoroscope(7);">Libra</a></b></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>September 23 - October 22</I></FONT>
+	  </TD>
+	</TR><TR>
+          <TD align=middle vAlign=center width=3 bordercolor="#FFFFFF"> </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(2);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Taurus.gif" width="64" height="64" border="0"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><B><a href="javascript:getDailyHoroscope(2);">Taurus</a></B></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>April 20 - May 20</I></FONT>
+	  </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(8);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Scorpio.gif" width="64" height="64"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><b><a href="javascript:getDailyHoroscope(8);">Scorpio</a></b></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>October 23 - November 21</I></FONT>
+	  </TD>
+	</TR><TR>
+          <TD align=middle vAlign=center width=3 bordercolor="#FFFFFF"> </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(3);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Gemini.gif" width="64" height="64" border="0"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><B><a href="javascript:getDailyHoroscope(3);">Gemini</a></B></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>May 21 - June 20</I></FONT>
+	  </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(9);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Sagittarius.gif" width="64" height="64"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><b><a href="javascript:getDailyHoroscope(9);">Sagittarius</a></b></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>November 22 - December 21</I></FONT>
+	  </TD>
+	</TR><TR>
+          <TD align=middle vAlign=center width=3 bordercolor="#FFFFFF"> </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(4);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Cancer.gif" width="64" height="64" border="0"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><B><a href="javascript:getDailyHoroscope(4);">Cancer</a></B></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>June 21 - July 22</I></FONT>
+	  </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(10);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Capricorn.gif" width="64" height="64"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><b><a href="javascript:getDailyHoroscope(10);">Capricorn</a></b></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>December 22 - January 19</I></FONT>
+	  </TD>
+	</TR><TR>
+          <TD align=middle vAlign=center width=3 bordercolor="#FFFFFF"> </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(5);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Leo.gif" width="64" height="64" border="0"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><B><a href="javascript:getDailyHoroscope(5);">Leo</a></B></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>July 23 - August 22</I></FONT>
+	  </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(11);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Aquarius.gif" width="64" height="64"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><b><a href="javascript:getDailyHoroscope(11);">Aquarius</a></b></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>January 20 - February 18</I></FONT>
+	  </TD>
+	</TR><TR>
+          <TD align=middle vAlign=center width=3 bordercolor="#FFFFFF"> </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(6);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Virgo.gif" width="64" height="64" border="0"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><B><a href="javascript:getDailyHoroscope(6);">Virgo</a></B></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>August 23 - September 22</I></FONT>
+	  </TD>
+          <TD align=middle vAlign=center><a href="javascript:getDailyHoroscope(12);"><img border="0" src="http://free.horoscope.com/horoscope/images/extpictsign3_Pisces.gif" width="64" height="64"></a></TD>
+          <TD align=left vAlign=center>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F"><b><a href="javascript:getDailyHoroscope(12);">Pisces</a></b></FONT>
+		<FONT size=2 face="arial,helvetica" color="#3F3F3F">   <BR><I>February 19 - March 20</I></FONT>
+	  </TD>
+	</TR>	
+	</TBODY></TABLE>
+</div>
+
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+</html>

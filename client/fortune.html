@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>Fortune</title>
+    <style>
+      body {
+        padding: 60px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <script language="JavaScript">
+
+// this is an array of fortune cookie quotes that are randomly generated every time you visit the file
+
+    var Quotation=new Array(); 
+
+    Quotation[0] = "Do or do not. There is no try.";
+    Quotation[1] = "Run!";
+    Quotation[2] = "That wasn't chicken";
+    Quotation[3] = "Would'nt it be ironic to die in the living room";
+    Quotation[4] = "Keep your goals away from the trolls";
+    Quotation[5] = "Delete not, lest you, too, be deleted.";
+    Quotation[6] = "You will be hungry again in one hour";
+    Quotation[7] = "You are about to finish reading a fortune.";
+    Quotation[8] = "All the effort you are making will ultimately pay off.";
+    Quotation[9] = "A drunk mans words are a sober mans thoughts";
+
+    var Q = Quotation.length;
+    var whichQuotation=Math.round(Math.random()*(Q-1));
+    function showQuotation(){document.write(Quotation[whichQuotation]);}
+    showQuotation();
+    </script>
+   
+  </body>
+</html>

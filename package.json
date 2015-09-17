@@ -1,0 +1,11 @@
+{
+  "name": "expressfortune",
+  "version": "0.0.1",
+  "description": "Fortune cookie and horoscope assignment using express",
+  "main": "server.js",
+  "repository": "https://bitbucket.org/Austincitylimits/express-fortune-cookie",
+  "author": "Austin Cartwright",
+  "dependencies": {
+    "express": "~4.13.3"
+  }
+}
